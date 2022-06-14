@@ -1,4 +1,4 @@
-# Vite SSR with React
+# Vite SSR with React 1
 
 Install dependencies
 
