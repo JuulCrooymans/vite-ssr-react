@@ -27,7 +27,7 @@ async function startServer() {
 
       if (isProd) {
         template = fs.readFileSync(
-          path.resolve("./client/index.html"),
+          path.resolve(__dirname, "./client/index.html"),
           "utf-8"
         );
         // @ts-ignore
