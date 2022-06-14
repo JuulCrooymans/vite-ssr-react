@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import express from "express";
+import "dotenv/config";
 
 async function startServer() {
   const isProd = process.env.NODE_ENV === "production";
@@ -47,7 +48,7 @@ async function startServer() {
     }
   });
 
-  app.listen(3000);
+  app.listen(process.env.PORT || 3000);
 }
 
 startServer();
